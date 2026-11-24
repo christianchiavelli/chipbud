@@ -1,0 +1,7 @@
+{
+  "globals": {
+    "$store": { "from": "vuex", "as": "store", "call": "useStore" },
+    "$router": { "from": "vue-router", "as": "router", "call": "useRouter" },
+    "$route": { "from": "vue-router", "as": "route", "call": "useRoute" }
+  }
+}

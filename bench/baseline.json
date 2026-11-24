@@ -1,0 +1,75 @@
+{
+  "chipbud": "0.1.0",
+  "measuredAt": "2026-11-24",
+  "corpora": [
+    {
+      "name": "vue-element-admin",
+      "kind": "application",
+      "sha": "6858a9ad67483025f6a9432a926beb9327037be3",
+      "files": 131,
+      "converted": 36,
+      "needsReview": 88,
+      "skipped": 7,
+      "errors": 0,
+      "declarations": 749,
+      "diagnostics": {
+        "this-instance-property": 141,
+        "this-unresolved": 44,
+        "option-not-supported": 28,
+        "this-shadowed": 21,
+        "computed-setter": 14,
+        "name-collision": 13,
+        "this-nested-function": 10,
+        "no-script": 7,
+        "store-not-mapped": 6,
+        "store-mapping": 5,
+        "watch-options": 3,
+        "sfc-not-convertible": 3
+      }
+    },
+    {
+      "name": "vue2-elm",
+      "kind": "application",
+      "sha": "b85ff0220366be863868269177a4abf74c7a85ca",
+      "files": 55,
+      "converted": 11,
+      "needsReview": 44,
+      "skipped": 0,
+      "errors": 0,
+      "declarations": 494,
+      "diagnostics": {
+        "store-not-mapped": 56,
+        "this-instance-property": 51,
+        "this-unresolved": 26,
+        "option-not-supported": 17,
+        "name-collision": 16,
+        "this-shadowed": 5,
+        "duplicate-binding": 3,
+        "sfc-not-convertible": 1
+      }
+    },
+    {
+      "name": "element",
+      "kind": "component library",
+      "sha": "c345bb453bf11badb4831a6a3f600c9372b3a336",
+      "files": 155,
+      "converted": 18,
+      "needsReview": 137,
+      "skipped": 0,
+      "errors": 0,
+      "declarations": 2270,
+      "diagnostics": {
+        "this-unresolved": 641,
+        "this-instance-property": 518,
+        "this-shadowed": 202,
+        "option-not-supported": 175,
+        "watch-options": 47,
+        "name-collision": 18,
+        "computed-setter": 9,
+        "component-not-imported": 6,
+        "sfc-not-convertible": 1,
+        "spread-option": 1
+      }
+    }
+  ]
+}

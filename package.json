@@ -1,0 +1,56 @@
+{
+  "name": "chipbud",
+  "version": "0.1.0",
+  "description": "Converts a Vue Options API component to <script setup>, or explains precisely why it will not.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "chipbud": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "keywords": [
+    "vue",
+    "codemod",
+    "migration",
+    "script-setup",
+    "composition-api",
+    "ast"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "pretest": "npm run build",
+    "test": "vitest run",
+    "verify": "npm run typecheck && npm run test",
+    "prebench": "npm run build",
+    "bench": "node bench/run.mjs",
+    "prepublishOnly": "npm run verify"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.24.0",
+    "@vue/compiler-sfc": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.24.0",
+    "@types/node": "^20.11.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/test-utils": "^2.6.0",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.4.0",
+    "vitest": "^2.1.0",
+    "vue": "^3.5.46"
+  }
+}
